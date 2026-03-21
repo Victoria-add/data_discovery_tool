@@ -10,14 +10,14 @@
 
 ```bash
 git clone https://github.com/your-username/data-discovery-tool.git
-cd data-discovery-tool
+cd data_discovery_tool
 
 ```
 Примечание: проект использует только стандартную библиотеку Python.
 
 
 ## 1. Подготовьте данные:
-
+(В нашем приложении уже создана такая папка)
 Создайте папку `data/` и поместите туда:
 - `.csv` файлы  
 - `.db` (SQLite база)
@@ -83,27 +83,41 @@ ___________________________
 data_discovery_tool/
 
 ├── **connectors**/                 # Подключение к источникам
-│   ├── __init__.py
+│   ├── __init__.py 
+
 │   ├── base.py                 # Абстрактный класс DataConnector
+
 │   ├── sqlite_connector.py     # SQLite реализаци
+
 │   └── csv_connector.py        # CSV реализация
+
 │
 ├── **index**/                      # Индексирование метаданных
+
 │   ├── __init__.py
 
 │   └── metadata_index.py       # Класс MetadataIndex
+
 │
 ├── **mcp**/                        # MCP API для агента
+
 │   ├── __init__.py
+
 │   └── tools.py                # MCP функции (listSources, indexSource, search, getSchema)
+
 │
 ├── **ui**/                         # Пользовательский интерфейс
+
 │   ├── __init__.py
+
 │   └── cli.py                  # CLI интерфейс
+
 │
 ├── **data**/                       # Директория с данными (создается пользователем)
 
+
 │   ├── employees.csv
+
 
 │   ├── departments.csv
 
