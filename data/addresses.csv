@@ -1,0 +1,21 @@
+employee_id,city,street,district
+1,Frankfurt,Second St,East
+2,Hamburg,Pine St,East
+3,Munich,Pine St,West
+4,Berlin,Oak St,West
+5,Cologne,Second St,South
+6,Berlin,Second St,South
+7,Frankfurt,Pine St,East
+8,Munich,Oak St,Center
+9,Hamburg,Park Ave,South
+10,Frankfurt,Main St,West
+11,Berlin,Pine St,North
+12,Munich,Second St,North
+13,Hamburg,Park Ave,West
+14,Cologne,Park Ave,West
+15,Munich,Second St,West
+16,Berlin,Second St,West
+17,Cologne,Park Ave,West
+18,Hamburg,Oak St,West
+19,Cologne,Oak St,Center
+20,Frankfurt,Pine St,East
