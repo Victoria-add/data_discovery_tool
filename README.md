@@ -9,7 +9,9 @@
 1. Клонируйте репозиторий:
 
 ```bash
+<<<<<<< HEAD
 git clone https://github.com/Victoria-add/data_discovery_tool.git
+>>>>>>> 864d029d7fc9f92dd50be4efe46ae21a148af378
 cd data_discovery_tool
 
 ```
@@ -17,7 +19,7 @@ cd data_discovery_tool
 
 
 ## 1. Подготовьте данные:
-
+(В нашем приложении уже создана такая папка)
 Создайте папку `data/` и поместите туда:
 - `.csv` файлы  
 - `.db` (SQLite база)
@@ -83,37 +85,61 @@ ___________________________
 data_discovery_tool/
 
 ├── **connectors**/                 # Подключение к источникам
-│   ├── __init__.py
+│   ├── __init__.py 
+
 │   ├── base.py                 # Абстрактный класс DataConnector
+
 │   ├── sqlite_connector.py     # SQLite реализаци
+
 │   └── csv_connector.py        # CSV реализация
+
 │
 ├── **index**/                      # Индексирование метаданных
+
 │   ├── __init__.py
 
 │   └── metadata_index.py       # Класс MetadataIndex
+
 │
 ├── **mcp**/                        # MCP API для агента
+
 │   ├── __init__.py
+
 │   └── tools.py                # MCP функции (listSources, indexSource, search, getSchema)
+
 │
 ├── **ui**/                         # Пользовательский интерфейс
+
 │   ├── __init__.py
+
 │   └── cli.py                  # CLI интерфейс
+
 │
 ├── **data**/                       # Директория с данными (создается пользователем)
 
+
+│   ├── addresses.csv
+
+
 │   ├── employees.csv
 
-│   ├── departments.csv
+|   ├── performance.cvs
 
-│   └── company.db
+│   └── database.db
 │
 ├── main.py                     # Точка входа
 
 ├── README.md                   # Документация
 
-└── requirements.txt            # Зависимости (пустой, только стандартная библиотека)
+├─ requirements.txt            # Зависимости (пустой, только стандартная библиотека)
+
+├──test_connectors.py          #Проверить, что коннекторы правильно работают с реальными данными.
+
+└──test_index.py               #Проверить, что индекс правильно собирает, хранит и ищет метаданные.
+
+
+В вашем проекте test_connectors.py и test_index.py не обязательны по ТЗ, но очень полезны для разработки и отладки.
+
 
 
 ##  Возможности
