@@ -1,7 +1,4 @@
-import sys
 from typing import Dict, Any
-from index import MetadataIndex
-from search import SearchEngine
 from mcp import MCPTools
 
 class CLI:
