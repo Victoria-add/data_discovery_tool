@@ -9,8 +9,8 @@
 1. Клонируйте репозиторий:
 
 ```bash
-git clone https://github.com/your-username/data-discovery-tool.git
-cd data-discovery-tool
+git clone https://github.com/Victoria-add/data_discovery_tool.git
+cd data_discovery_tool
 
 ```
 Примечание: проект использует только стандартную библиотеку Python.
