@@ -9,9 +9,9 @@
 1. Клонируйте репозиторий:
 
 ```bash
-<<<<<<< HEAD
+
 git clone https://github.com/Victoria-add/data_discovery_tool.git
->>>>>>> 864d029d7fc9f92dd50be4efe46ae21a148af378
+
 cd data_discovery_tool
 
 ```
